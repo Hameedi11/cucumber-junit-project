@@ -34,10 +34,10 @@ public class WebTableOrder_StepDefs {
     }
 
     @When("user selects product type {string}")
-    public void user_selects_product_type(String string) {
+    public void user_selects_product_type(String productType) {
 
         select = new Select(webTableOrderPage.productTypeDropdown);
-        select.selectByVisibleText(string);
+        select.selectByVisibleText(productType);
 
     }
 
